@@ -1,4 +1,5 @@
 let pessoaEstudante = "euMesmo";
 let hasbilidadesPessoaEstudante = 10;
-//Eu sou Tryber e...
+//"Vou ter  muito sucesso na programação!"
+//Eu sou Tryber e não dessito nunca !!!?!!!!!!!!!!
 console.log("sucesso");
