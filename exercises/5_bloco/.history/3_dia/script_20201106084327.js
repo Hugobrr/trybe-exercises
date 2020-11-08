@@ -23,22 +23,19 @@ function createDayOfTheMonth(){
 
   for (let i=0; i<dezDaysList.length; i++){
 
-      const day = document.createElement('li');
+      const day = document.createElement('li')
       const dayMonth = dezDaysList[i];
-      day.innerText = dayMonth;
-
-      if (dayMonth === 24 || dayMonth === 31){
+      day.innerHTML = dezDaysList[i]
+      day.appendChild('days');
+      if (dayMonth === 24 ||dayMonth === 11){
         day.className = "day holiday";
-      } else if (dayMonth === 4 || dayMonth === 11 || dayMonth === 18){
+      } else if (dayMonth === 4){
         day.className = "day friday"
-      } else if (dayMonth ===25 ){
+      } else if (dayMonth ===25){
         day.className = "day holiday friday"
       }else {
         day.className ="day"
       }
-      days.appendChild(day);
   }
 }
 createDayOfTheMonth();
-
-function
