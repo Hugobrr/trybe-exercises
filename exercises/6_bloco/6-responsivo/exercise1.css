@@ -15,3 +15,47 @@ img {
 figure {
     margin: 0;
 }
+@media screen and (max-width:500px){
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+    body {
+        margin: 10px;
+    }
+
+    img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:1500px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 28px;
+    }
+    body {
+        margin: 30px;
+        background-color: antiquewhite;
+    }
+
+    img {
+        /* display: flex;
+        flex-wrap: wrap; */
+        float: right;
+    }
+
+    figure {
+        /* display: flex;
+        flex-wrap: wrap; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
