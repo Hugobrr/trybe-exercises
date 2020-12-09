@@ -71,7 +71,7 @@ function authorUnique() {
   let resultado = false;
   const yearS = books.forEach((livrosA) => {
     const yearZ = books.forEach((livrosB) => {      
-        if(livrosA.author.birthYear === livrosB.author.birthYear && livrosA.author.name! == livrosB.author.name){
+        if(livrosA.author.birthYear === livrosB.author.birthYear && livrosA.author.name !== livrosB.author.name){
             resultado = true;
         }
     });

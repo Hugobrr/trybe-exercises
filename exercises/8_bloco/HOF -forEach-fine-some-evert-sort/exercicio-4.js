@@ -63,7 +63,7 @@ const books = [
   },
 ];
 
-const expectedResult = {
+const expectedResult =  {
   author: {
     birthYear: 1948,
     name: 'George R. R. Martin'
@@ -77,7 +77,8 @@ const expectedResult = {
 function getNamedBook() {
   // escreva seu código aqui
   // Ordene os livros por data de lançamento em ordem decrescente.
-  return books.sort((a, b) => b.releaseYear - a.releaseYear );
+  const resultado = books.sort((a, b) =>  b.releaseYear - a.releaseYear);
+  return books[0];
 }
 
 assert.deepStrictEqual(getNamedBook(), expectedResult);
